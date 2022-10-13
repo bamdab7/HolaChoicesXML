@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<VBox alignment="CENTER" prefHeight="368.0" prefWidth="446.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellochoicesxml.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <VBox prefHeight="287.0" prefWidth="406.0">
+         <children>
+            <HBox prefHeight="150.0" prefWidth="406.0">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="252.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Introduce profesión" wrappingWidth="139.02864837646484" />
+                              <ComboBox prefWidth="150.0">
+                                 <items>
+                                    <FXCollections fx:factory="observableArrayList">
+                                       <String fx:value="Opcion 1"/>
+                                       <String fx:value="Opcion 2"/>
+                                       <String fx:value="Opcion 3"/>
+                                       <String fx:value="Opcion 4"/>
+                                    </FXCollections>
+                                 </items>
+                              </ComboBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Introduce tu nombre" wrappingWidth="135.37760162353516" />
+                              <TextField prefHeight="26.0" prefWidth="123.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="157.0">
+                     <children>
+                        <Button contentDisplay="CENTER" mnemonicParsing="false" text="OK" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="187.0" prefWidth="406.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="139.0" prefWidth="426.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Texto aleatorio que sale">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin></Text>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="REFRESCAR" fx:id="btnReferescar"/>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
